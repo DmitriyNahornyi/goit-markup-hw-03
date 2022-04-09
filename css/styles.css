@@ -6,6 +6,39 @@
     --background-color:#2F303A;
 }
 
+/*block css*/
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
 /* index.html portfolio.html header footer,portfolio.html main */
 
 body {
@@ -21,13 +54,34 @@ body {
     font-size: 26px;
     line-height: 1.19;
     color:var(--title-text-color);
+    margin-right: 93px;
 }
 
 .logo-blue {
     color: var(--accent-color);
 }
 
+.header .container {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.main-head {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-nav li:not(:last-child) {
+    margin-right: 50px;
+}
+
 .header-nav-link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 31px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -50,7 +104,14 @@ body {
     list-style: none;
 }
 
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+
 .contacts-link {
+    padding-top: 32px;
+    padding-bottom: 31px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -62,6 +123,20 @@ body {
 .contacts-link:hover,
 .contacts-link:focus {
     color: var(--accent-color);
+}
+
+.contacts li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.portfolio-nav {
+    display: flex;
+    padding-top: 94px;
+    justify-content:center;
+}
+
+.portfolio-nav li:not(:last-child) {
+    margin-right: 30px;
 }
 
 .portfolio-button {
@@ -81,8 +156,34 @@ body {
 
 .portfolio-button:focus,
 .portfolio-button:hover {
-background-color: var(--accent-color);
-color: var(--primary-white);
+    background-color: var(--accent-color);
+    color: var(--primary-white);
+}
+
+.portfolio-main {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.portfolio-main-pad {
+    border: 1px solid #EEEEEE;
+    border-top: transparent;
+    padding: 20px 24px;
+}
+
+.portfolio-main li {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: calc(100% / 3 - 20px);
+}
+
+.portfolio-main li:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.portfolio-main li :nth-last-child(-n+3) {
+    margin-bottom: 0;
 }
 
 .portfolio-title {
@@ -103,6 +204,14 @@ color: var(--primary-white);
     background-color: var(--background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer-adress {
+    margin-top: 20px;
+}
+
+.footer-adress li:not(:first-child) {
+    margin-top: 9px;
 }
 
 .footer-logo {
@@ -176,9 +285,18 @@ color: var(--primary-white);
     color: var(--primary-white);
 }
 
-.advantage {
-    padding-top: 94px;
-    padding-bottom: 94px;
+.advantage-main {
+
+    display: flex;
+    text-align: left;
+}
+
+.advantage-main li {
+    width: calc(100% / 3 - 30px);
+}
+
+.advantage-main li:not(:last-child) {
+    margin-right: 30px;
 }
 
 .advantage-title {
@@ -195,8 +313,7 @@ color: var(--primary-white);
 }
 
 .work {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 0px;
 }
 
 .work-title {
@@ -207,10 +324,34 @@ color: var(--primary-white);
     color: var(--title-text-color);
 }
 
+.work-photo {
+    display: flex;
+    margin-top: 50px;
+}
+
+.work-photo li:not(:last-child) {
+    margin-right: 30px;
+}
+
 .command {
     background-color: #F5F4FA;
-    padding-top: 94px;
-    padding-bottom: 94px;
+}
+
+.command-main {
+    display: flex;
+    margin-top: 50px;
+}
+
+.command-main li {
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--primary-white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.command-main li:not(:last-child) {
+    margin-right: 30px;
 }
 
 .command-main-title {
@@ -222,6 +363,7 @@ color: var(--primary-white);
 }
 
 .command-title {
+    margin-top: 30px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -229,6 +371,8 @@ color: var(--primary-white);
 }
 
 .command-text {
+    margin-top: 10px;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
 }
@@ -237,20 +381,3 @@ address {
     font-style: normal;
 }
 
-/*block css*/
-
-.container {
-    margin: 0 auto;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-h1 , h2 , h3 , ul , p {
-    margin: 0;
-    padding: 0;
-}
-
-.centered{
-    text-align: center;
-}
