@@ -18,39 +18,41 @@
             <nav class="main-head">
                 <a href="./index.html" lang="en" class="logo list"><span class="logo-blue list">Web</span>Studio</a>
                 <ul class="header-nav list">
-                    <li><a class="header-nav-link current" aria-current="true" href="./index.html">Студия</a></li>
-                    <li><a class="header-nav-link" href="./portfolio.html">Портфолио</a></li>
-                    <li><a class="header-nav-link" href="#">Контакты</a></li>
+                    <li class="item"><a class="header-nav-link current" aria-current="true" href="./index.html">Студия</a></li>
+                    <li class="item"><a class="header-nav-link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="item"><a class="header-nav-link" href="#">Контакты</a></li>
                 </ul>
             </nav>
                 <ul class="contacts list">
-                    <li><a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="contacts-link" href="tell:+380961111111">+38 096 111 11 11</a></li>
+                    <li class="item"><a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="item"><a class="contacts-link" href="tell:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
         </div>
     </header>
     <main>
-    <section class="main section">
+    <section class="main">
+        <div class="container">    
             <h1 class="main-title">Эффективные решения <br/>для вашего бизнеса</h1>
             <button class="main-button">Заказать услугу</button>
+        </div>
     </section>
     <section class="section">
         <div class="container">
-            <h2 class="hidden">Наше преимущество</h2>
+            <h2 class="visually-hidden">Наше преимущество</h2>
             <ul class="advantage-main list">
-                <li>
+                <li class="item">
                 <h3 class="advantage-title">Внимание к деталям</h3>
                 <p class="advantage-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
-                <li>
+                <li class="item">
                     <h3 class="advantage-title">Пунктуальность</h3>
                     <p class="advantage-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
-                <li>
+                <li class="item">
                     <h3 class="advantage-title">Планирование</h3>
                     <p class="advantage-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li>
+                <li class="item">
                     <h3 class="advantage-title">Современные технологии</h3>
                     <p class="advantage-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
@@ -61,9 +63,9 @@
         <div class="container">
             <h2 class="work-title">Чем мы занимаемся</h2>
             <ul class="work-photo list">
-                <li><img src="./images/pcwork.jpg" alt="работает за компьютером" width="370"></li>
-                <li><img src="./images/telecomunnication.jpg" alt="работа с телефонными коммуникациями" width="370"></li>
-                <li><img src="./images/design.jpg" alt="дизайн графиков" width="370"></li>
+                <li class="item"><img src="./images/pcwork.jpg" alt="работает за компьютером" width="370"></li>
+                <li class="item"><img src="./images/telecomunnication.jpg" alt="работа с телефонными коммуникациями" width="370"></li>
+                <li class="item"><img src="./images/design.jpg" alt="дизайн графиков" width="370"></li>
             </ul>
         </div>
     </section>
@@ -71,21 +73,29 @@
         <div class="container">
             <h2 class="command-main-title">Наша команда</h2>
             <ul  class="command-main list">
-                <li><img src="./images/igordemyanenko.jpg" alt="Игор Демьяненко" width="270">
+                <li class="item"><img src="./images/igordemyanenko.jpg" alt="Игор Демьяненко" width="270">
+            <div class="padding">
                 <h3 class="command-title">Игорь Демьяненко</h3>
                 <p lang="en" class="command-text">Product Designer</p>
+            </div>
                 </li>
-                <li><img src="./images/olgarepina.jpg" alt="Ольга Репина" width="270">
+                <li class="item"><img src="./images/olgarepina.jpg" alt="Ольга Репина" width="270">
+            <div class="padding">
                 <h3 class="command-title">Ольга Репина</h3>
                 <p lang="en" class="command-text">Frontend Developer</p>
+            </div>  
                 </li>
-                <li><img src="./images/nikolaitarasov.jpg" alt="Николай Тарасов" width="270">
+                <li class="item"><img src="./images/nikolaitarasov.jpg" alt="Николай Тарасов" width="270">
+            <div class="padding">
                 <h3 class="command-title">Николай Тарасов</h3>
                 <p lang="en" class="command-text">Marketing</p>
+            </div>
                 </li>
-                <li><img src="./images/michailyermakov.jpg" alt="Михаил Ермаков" width="270">
+                <li class="item"><img src="./images/michailyermakov.jpg" alt="Михаил Ермаков" width="270">
+            <div class="padding">
                 <h3 class="command-title">Михаил Ермаков</h3>
                 <p lang="en" class="command-text">UI Designer</p>
+            </div>
                 </li>
             </ul>
         </div>
@@ -94,7 +104,7 @@
     <footer class="footer">
         <div class="container">
             <a href="./index.html" lang="en" class="footer-logo list"><span class="logo-blue list">Web</span>Studio</a>
-            <address>
+            <address class="address">
                 <ul class="footer-adress list">
                     <li><a class="footer-googlemaps list" href="https://goo.gl/maps/NU1bq5NP4mPZCGpFA" target="_blank"
                             rel="noopener noreferrer">г. Киев, пр-т
